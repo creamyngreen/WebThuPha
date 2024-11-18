@@ -6,6 +6,14 @@ import { GoSearch } from "react-icons/go";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import aboutus1 from "../../assets/LandingPage/aboutus1.png";
 import aboutus2 from "../../assets/LandingPage/aboutus2.png";
+import services from "../../assets/LandingPage/services.png";
+import ViewHome from "../../Components/ViewHome/ViewHome";
+import { MdArrowOutward } from "react-icons/md";
+import consultant1 from "../../assets/LandingPage/consultant1.png";
+import consultant2 from "../../assets/LandingPage/consultant2.png";
+import consultant3 from "../../assets/LandingPage/consultant3.png";
+import Schedule from "../../Components/Schedule/Schedule";
+import Footer from "../../Components/Footer/Footer";
 const LandingPage = () => {
     return (        
         <>  
@@ -112,7 +120,173 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
+            <ViewHome />
+            {/* Our Services Section */}
+            <div className="py-10 text-center">
+                <h2 className="text-4xl font-bold mb-6 ">Our Services</h2>
+                <div className="bg-secondary p-6">
+                    <div className="flex flex-col md:flex-row items-center">
+                        <img src={services} alt="Our Services" className="max-w-md mb-4 md:mb-0 md:mr-4" />
+                        <div className="flex flex-col items-start text-left ml-20">
+                            <div className="space-y-3">
+                                <p className="text-2xl">
+                                    Customers contact EzLife Vietnam to be introduced in detail about PMSS 
+                                </p>
+                                <p className="text-2xl ">
+                                    Technology Solution as well as provide some qualitative information about the 
+                                </p>
+                                <p className="text-2xl ">
+                                    project so that Ezlife Vietnam can support consulting suitable to the needs. 
+                                </p>
+                                <p className="text-2xl ">
+                                    Based on the requirements and information provided by customers, EzLife 
+                                </p>
+                                <p className="text-2xl ">
+                                    Vietnam experts will conduct a survey at the project to advise on building
+                                </p>
+                                <p className="text-2xl ">
+                                    methods and processes, personnel, and then provide a service report.
+                                </p>
+                            </div>
+                            <div className="flex justify-center mt-10">
+                                <button className="flex items-center text-white bg-tertiary px-4 py-2 rounded-full">
+                                Read more
+                                <MdArrowOutward className="text-white ml-1 text-lg"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* Consultant & Training Section */}
+            <div className="py-10 text-center">
+                <h2 className="text-4xl font-bold mb-16">Consultant & Training</h2>
+                <div className="flex flex-col md:flex-row justify-center">
+                    <div className="max-w-xs bg-white overflow-hidden mr-4 relative">
+                        <img src={consultant1} alt="Management Consultant" className="w-full h-96 object-cover" />
+                        <div className="absolute inset-0 bottom-7 flex items-center justify-center">
+                            <h3 className="text-2xl font-semibold text-white">Management Consultant</h3>
+                        </div>
+                    </div>
+                    <div className="flex flex-col">
+                        <div className="max-w-xs bg-white overflow-hidden mb-4 relative">
+                            <img src={consultant2} alt="Real Estate Management Tech Solutions" className="w-full h-48 object-cover" />
+                            <div className="absolute inset-0 flex items-center justify-center">
+                                <h3 className="text-xl font-semibold text-white">Real Estate Management Tech Solutions</h3>
+                            </div>
+                        </div>
+                        <div className="max-w-xs bg-white overflow-hidden relative">
+                            <img src={consultant3} alt="Resort and Hotel Management Solution" className="w-full h-44 object-cover" />
+                            <div className="absolute inset-0 flex items-center justify-center">
+                                <h3 className="text-xl font-semibold text-white">Resort and Hotel Management Solution</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* Our Latest News Section */}
+            <div className="py-10 text-center bg-secondary">
+                <h2 className="text-4xl font-bold mb-6">Our Latest News</h2>
+                <div className="space-x-4 flex justify-center">
+                    <div className="rounded-lg p-4">
+                        <div className="text-center flex flex-col items-center">
+                            <div className="flex flex-col items-center absolute left-96 bg-white rounded-b-lg w-16 p-2">
+                                <span className="block text-black font-bold text-xl">28</span>
+                                <span className="block text-gray-500 text-lg">Tue</span>
+                            </div>
+                            <img src={consultant1} alt="News 1" className="w-96 h-72 object-cover rounded-lg" />
+                            <p className="mt-2 text-2xl font-semibold">EZLIFE organized activities toward</p>
+                            <p className=" text-2xl font-semibold">WORLD ENVIRONMENT DAY</p>
+                        </div>
+                        
+                    </div>
+                    <div className="rounded-lg p-4">
+                        <div className="text-center flex flex-col items-center">
+                        <div className="flex flex-col items-center absolute left-[51rem] bg-white rounded-b-lg w-16 p-2">
+                                <span className="block text-black font-bold text-xl">08</span>
+                                <span className="block text-gray-500 text-lg">Mon</span>
+                            </div>
+                            <img src={consultant2} alt="News 2" className="w-96 h-72 object-cover rounded-lg" />
+                            <p className="mt-2 text-2xl text-wrap font-semibold">Ezlife officially launch new project</p>
+                            <p className="text-2xl text-wrap font-semibold">UIT</p>
+                        </div>
+                        
+                    </div>
+                    <div className="rounded-lg p-4">
+                        <div className="text-center flex flex-col items-center">
+                        <div className="flex flex-col items-center absolute left-[78rem] bg-white rounded-b-lg w-16 p-2">
+                                <span className="block text-black font-bold text-xl">26</span>
+                                <span className="block text-gray-500 text-lg">Wed</span>
+                            </div>
+                            <img src={consultant3} alt="News 3" className="w-96 h-72 object-cover rounded-lg" />
+                            <p className="mt-2 text-2xl text-wrap font-semibold">Ezlife do charities to children</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex justify-center mt-4">
+                    <button className="flex items-center text-white bg-tertiary px-4 py-2 rounded-full">
+                        Read more
+                        <MdArrowOutward className="text-white ml-1 text-lg"/>
+                    </button>
+                </div>
+            </div>
+            {/* Our Blog Section */}
+            <div className="py-10 text-center bg-white">
+                <p className="text-xl font-medium"> WHAT'S TRENDING</p>
+                <h2 className="text-4xl font-bold mb-6">Our Blogs</h2>
+                <div className="space-x-4 flex justify-center">
+                    <div className="rounded-lg p-4">
+                        <div className="text-center flex flex-col items-center">
+                            <div className="flex flex-col items-center absolute left-96 bg-white rounded-b-lg w-16 p-2">
+                                <span className="block text-black font-bold text-xl">28</span>
+                                <span className="block text-gray-500 text-lg">Tue</span>
+                            </div>
+                            <img src={consultant1} alt="News 1" className="w-96 h-72 object-cover rounded-lg" />
+                            <p className="mt-2 text-2xl font-semibold">Top 10 Home Buying Mistakes </p>
+                            <p className=" text-2xl font-semibold">to Avoid</p>
+                            <p className="text-gray-500"> Etiam eget elementum elit. Aenean dignissim </p>
+                            <p className="text-gray-500"> dapibus vestibulum</p>
+                        </div>
+                        
+                    </div>
+                    <div className="rounded-lg p-4">
+                        <div className="text-center flex flex-col items-center">
+                        <div className="flex flex-col items-center absolute left-[51rem] bg-white rounded-b-lg w-16 p-2">
+                                <span className="block text-black font-bold text-xl">08</span>
+                                <span className="block text-gray-500 text-lg">Mon</span>
+                            </div>
+                            <img src={consultant2} alt="News 2" className="w-96 h-72 object-cover rounded-lg" />
+                            <p className="mt-2 text-2xl text-wrap font-semibold">How to Stage Your Home </p>
+                            <p className="text-2xl text-wrap font-semibold">for a Quick Sale</p>
+                            <p className="text-gray-500"> Nullam odio lacus, dictum quis pretium  </p>
+                            <p className="text-gray-500"> congue, vehicula venenatis nunc</p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div className="rounded-lg p-4">
+                        <div className="text-center flex flex-col items-center">
+                        <div className="flex flex-col items-center absolute left-[78rem] bg-white rounded-b-lg w-16 p-2">
+                                <span className="block text-black font-bold text-xl">26</span>
+                                <span className="block text-gray-500 text-lg">Wed</span>
+                            </div>
+                            <img src={consultant3} alt="News 3" className="w-96 h-72 object-cover rounded-lg" />
+                            <p className="mt-2 text-2xl text-wrap font-semibold">5 Tips for First-Time Home Sellers</p>
+                            <p className="text-gray-500"> In hac habitasse platea dictumst.  </p>
+                            <p className="text-gray-500"> Phasellus vel velit vel augue maximus</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex justify-center mt-4">
+                    <button className="flex items-center text-white bg-tertiary px-4 py-2 rounded-full">
+                        Browse Now
+                        <MdArrowOutward className="text-white ml-1 text-lg"/>
+                    </button>
+                </div>
+            </div>
+            <Schedule />
+            <Footer />
         </div>
         </> 
     )   
